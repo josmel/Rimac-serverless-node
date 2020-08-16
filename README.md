@@ -75,17 +75,17 @@ resources: 32
 api keys:
   None
 endpoints:
-  POST - https://xxxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev/books
-  PUT - https://xxxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev/books/{id}
-  GET - https://xxxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev/books
-  GET - https://xxxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev/books/{id}
-  DELETE - https://xxxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev/books/{id}
+  POST - https://xxxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev/api/people
+  PUT - https://xxxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev/api/people/{id}
+  GET - https://xxxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev/api/people
+  GET - https://xxxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev/api/people/{id}
+  DELETE - https://xxxxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev/api/people/{id}
 functions:
-  create: aws-node-rest-api-typescript-dev-create
-  update: aws-node-rest-api-typescript-dev-update
-  find: aws-node-rest-api-typescript-dev-find
-  findOne: aws-node-rest-api-typescript-dev-findOne
-  deleteOne: aws-node-rest-api-typescript-dev-deleteOne
+  peopleCreate: aws-node-rest-api-typescript-dev-create
+  peopleUpdate: aws-node-rest-api-typescript-dev-update
+  peopleList: aws-node-rest-api-typescript-dev-find
+  peopleDetails: aws-node-rest-api-typescript-dev-findOne
+  peopleDelete: aws-node-rest-api-typescript-dev-deleteOne
 layers:
   None
 Serverless: Removing old service artifacts from S3...

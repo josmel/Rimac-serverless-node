@@ -119,4 +119,14 @@ serverless dynamodb migrate (this imports schema)
 serverless offline start
 ```
 
-## Usage
+## test mocha
+
+```bash
+npm test
+```
+
+## test serverless framework
+
+```bash
+sls test
+```

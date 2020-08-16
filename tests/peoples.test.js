@@ -1,7 +1,6 @@
 const lambdaTester = require('lambda-tester');
 const { expect } = require('chai');
 const { findOne, find, create, update, deleteOne } = require('../src/handler');
-//const * as booksMock from './books.mock';
 const myAPI = require('../src/service/people');
 const sinon = require('sinon');
 
@@ -16,8 +15,7 @@ describe('FindOne [GET]', () => {
                 .atLeast(1)
                 .atMost(3)
                 .resolves({
-                    "_id": "5dff58da85eb210f0aac43af",
-                    "nombre": "深入浅出Node.js"
+                    "_id": "5dff58da85eb210f0aac43af"
                 });
 
             return lambdaTester(findOne)

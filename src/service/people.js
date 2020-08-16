@@ -38,7 +38,9 @@ class PeopleService {
 
     async findOnePeopleById(peopleId) {
         try {
-            this.params.Key = peopleId;
+            this.params.Key = {
+                id: peopleId
+            };
             const result = await this.dynamoDb.get(this.params).promise();
             return result;
         } catch (err) {
@@ -50,7 +52,9 @@ class PeopleService {
     async deleteOnePeopleById(peopleId) {
         try {
 
-            this.params.Key = peopleId;
+            this.params.Key = {
+                id: peopleId
+            };
 
             const result = await this.dynamoDb.delete(this.params).promise();
             return result;

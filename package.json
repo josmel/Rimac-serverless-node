@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "local": "serverless offline",
+    "deploy": "serverless deploy",
     "test": "mocha 'tests/**/*.js' "
   },
   "keywords": [],

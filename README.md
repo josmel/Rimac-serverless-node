@@ -99,3 +99,34 @@ send an HTTP request directly to the endpoint using a tool like curl
 ```
 curl https://xxxxxxxxx.execute-api.us-east-1.amazonaws.com/dev/people
 ```
+
+## Use-case Local
+
+Test your service locally, without having to deploy it first.
+
+## Setup
+
+```bash
+npm install
+serverless dynamodb install
+serverless offline start
+serverless dynamodb migrate (this imports schema)
+```
+
+## Run service offline
+
+```bash
+serverless offline start
+```
+
+## test mocha
+
+```bash
+npm test
+```
+
+## test serverless framework
+
+```bash
+sls test
+```

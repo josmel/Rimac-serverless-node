@@ -1,0 +1,25 @@
+{
+  "name": "rimac-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha 'tests/**/*.js' "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "dynamodb": "^1.2.1",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.734.0",
+    "chai": "^4.2.0",
+    "lambda-tester": "^4.0.1",
+    "serverless-dynamodb-local": "^0.2.39",
+    "serverless-offline": "^6.5.0",
+    "sinon": "^9.0.3"
+  }
+}

@@ -1,0 +1,24 @@
+- name: lists peoples
+  endpoint: { function: peopleDetails }
+  response:
+    status: 200
+- name: create people
+  endpoint: { function: peopleCreate }
+  request:
+    body:
+      nombre: "noel"
+      anio_nacimiento: "1990"
+      color_ojos: "azul"
+      genero: "comedia"
+      color_cabello: "rojo"
+      altura: "1.870"
+      masa: "98"
+      color_piel: "mestizo"
+      ciudad_natal: "lima"
+      peliculas: ["a", "b"]
+      especies: ["a", "b"]
+      naves_espaciales: ["a", "b"]
+      vehiculos: ["a", "b"]
+      url: "http://google.com"
+  response:
+    body: '{"code":0,"message":"success","data":{}}'

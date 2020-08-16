@@ -1,0 +1,83 @@
+{
+  "type": "object",
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 20
+    },
+    "anio_nacimiento": {
+      "type": "string",
+      "minLength": 4,
+      "maxLength": 4
+    },
+    "color_ojos": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 100
+    },
+    "genero": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 100
+    },
+    "color_cabello": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 100
+    },
+    "altura": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 100
+    },
+    "masa": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 100
+    },
+    "color_piel": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 100
+    },
+    "ciudad_natal": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 100
+    },
+    "peliculas": {
+      "type": "array"
+    },
+    "especies": {
+      "type": "array"
+    },
+    "naves_espaciales": {
+      "type": "array"
+    },
+    "vehiculos": {
+      "type": "array"
+    },
+    "url": {
+      "type": "string",
+      "minLength": 6,
+      "maxLength": 100
+    }
+  },
+  "required": [
+    "nombre",
+    "anio_nacimiento",
+    "color_ojos",
+    "genero",
+    "color_cabello",
+    "altura",
+    "masa",
+    "color_piel",
+    "ciudad_natal",
+    "peliculas",
+    "especies",
+    "naves_espaciales",
+    "vehiculos",
+    "url"
+  ]
+}

@@ -5,7 +5,7 @@
     "version" : "1.0.0",
     "title" : "SWAPI"
   },
-  "host" : "vatzkg5it9.execute-api.us-east-1.amazonaws.com",
+  "host" : "zc4oinmum9.execute-api.us-east-1.amazonaws.com",
   "basePath" : "/dev/api",
   "tags" : [ {
     "name" : "people",

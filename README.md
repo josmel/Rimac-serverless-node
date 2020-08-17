@@ -20,7 +20,7 @@ This is simple REST API example for AWS Lambda By Serverless framwork with node 
 ## Invoke the function locally
 
 ```bash
-serverless invoke local --function find
+serverless invoke local --function peopleDetails
 ```
 
 Which should result in:

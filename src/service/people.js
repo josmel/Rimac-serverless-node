@@ -1,18 +1,24 @@
 'use strict';
 
 const AWS = require('aws-sdk');
-const TABLE = process.env.PEOPLE_TABLE;
-
+AWS.config.update({ region: process.env.AWS_REGION });
 class PeopleService {
 
     /**
      * @description Create an instance of DynamoDB
      */
     constructor() {
-        this.dynamoDb = new AWS.DynamoDB.DocumentClient();
+        this.dynamoDb = new AWS.DynamoDB.DocumentClient(
+            {
+                region: process.env.AWS_REGION,
+                accessKeyId: process.env.accessKey,
+                secretAccessKey: process.env.secretKey
+            });
+
         this.params = {
-            TableName: TABLE
+            TableName: process.env.PEOPLE_TABLE
         }
+
     }
 
     async createPeople(peopleToCreate) {

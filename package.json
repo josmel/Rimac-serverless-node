@@ -6,14 +6,13 @@
   "scripts": {
     "local": "serverless offline",
     "deploy": "serverless deploy",
-    "test": "mocha 'tests/**/*.js' "
+    "test": "cross-env  NODE_ENV=dev mocha 'tests/**/*.js' --exit"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bluebird": "^3.7.2",
-    "dynamodb": "^1.2.1",
+    "cross-env": "^7.0.2",
     "uuid": "^8.3.0"
   },
   "devDependencies": {

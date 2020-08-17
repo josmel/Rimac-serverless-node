@@ -27,6 +27,7 @@ provider:
   logs:
     restApi: true
   environment:
+    NODE_ENV: dev
     PEOPLE_TABLE: ${self:service}-${opt:stage, self:provider.stage}
     PEOPLE_EMAIL_TABLE: "PEOPLE-email-${opt:stage, self:provider.stage}"
   iamRoleStatements:

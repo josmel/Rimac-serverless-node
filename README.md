@@ -1,5 +1,6 @@
 <!--
 title: 'Serverless Nodejs Rest API with DynamoDB'
+
 description: 'This is simple REST API example for AWS Lambda By Serverless  with node.'
 framework: v1
 platform: AWS
